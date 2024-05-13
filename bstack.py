@@ -10,13 +10,14 @@ class BoundedStack:
         else:
             print("Stack is full, cannot push more items.")
             return False
+            
     def pop(self):
         if self.items:
             return self.items.pop()
         else:
             print("Stack is empty, cannot pop.")
             return None
-
+            
     def peek(self):
         if self.stack:
             return self.items[-1]
